@@ -6,8 +6,9 @@ function App() {
       <header className="App-header">
         <nav>
           <h1>Patcharalak Tulyakul</h1>
-          <img src="/icons/Icon1.svg" alt="menu"/>
+          <img src="/icons/Icon1.svg" alt="menu" className="App-logo"/>
         </nav>
+        
         <div>
           <img src="/icons/Pat.jpg" alt="Picture of me"/>
           <p>Hello! My name is Patcharalak Tulyakul. I'm a Computer Science student.</p>
@@ -18,6 +19,7 @@ function App() {
           <a href="https://www.linkedin.com/in/patcharalak-tulyakul/">linkedin</a>
           <a href="mailto:patchatulyakul@gmail.com">gmail</a>
         </div>
+
       </header>
     </div>
   );

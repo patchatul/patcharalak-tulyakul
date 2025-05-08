@@ -4,15 +4,29 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 10vmin;
 }
 
 /*@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }*/
+
+@font-face {
+  font-family: FontPat;
+  src: url('../public/Pat3-Regular.ttf');
+  
+}
 
 .App-header {
   background-color: #263650;
@@ -28,19 +42,9 @@
 /*.App-link {
   color: #61dafb;
   #490013 #ABB2C5
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }*/
 
-@font-face {
-  font-family: FontPat;
-  src: url('../public/Pat1-Regular.ttf');
-  
+a{
+  text-decoration: none;
+  color:#FFF9D1;
 }
