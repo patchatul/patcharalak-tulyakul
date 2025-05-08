@@ -2,10 +2,8 @@ import './App.css';
 
 function Projects(){
     return (
-        <div className="App">
-          <header className="App-header">
-            <h1>Projects</h1>
-          </header>
+        <div className="Projects">
+            <h2>Projects</h2>
         </div>
       );    
 }

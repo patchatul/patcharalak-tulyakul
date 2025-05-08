@@ -2,9 +2,8 @@ import './App.css';
 
 function Certificates() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Certificates</h1>
+    <div className="Certificates">
+      <h1>Certificates</h1>
         <div>
           <p>Meta Front-End Developer</p>
           <a href="https://www.coursera.org/account/accomplishments/professional-cert/34FVJVRS4DKP">
@@ -26,8 +25,6 @@ function Certificates() {
           </a>
           <p>Projects and skills: </p>
         </div>
-        
-      </header>
     </div>
   );
 }

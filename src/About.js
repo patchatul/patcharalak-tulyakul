@@ -1,8 +1,8 @@
 import './App.css';
 
-function AboutMe(){
+function About(){
     return(
-    <header className="App-header">
+    <div className="About">
         <div>
             <img src="/icons/Pat.jpg" alt="Picture of me"/>
             <p>Hello! My name is Patcharalak Tulyakul. I'm a Computer Science student.</p>
@@ -12,7 +12,7 @@ function AboutMe(){
             <a href="https://www.linkedin.com/in/patcharalak-tulyakul/">linkedin</a>
             <a href="mailto:patchatulyakul@gmail.com">gmail</a>
         </div>
-    </header>
+    </div>
     );
 }
-export default AboutMe;
+export default About;

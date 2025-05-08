@@ -25,12 +25,11 @@
 @font-face {
   font-family: FontPat;
   src: url('../public/Pat3-Regular.ttf');
-  
 }
 
 .App-header {
   background-color: #263650;
-  min-height: 100vh;
+  min-height: 5vh;
   display: flex;
   flex-direction: column;
   align-items: center;
