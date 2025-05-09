@@ -1,22 +1,26 @@
 import { useState } from 'react';
 import './App.css';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 function Nav(){
     const [menuOpen, setMenuOpen] = useState(false);
-    function toggleMenu(){
+    const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     }
     return(
         <header className="App-header">
-            <h1>Patcharalak Tulyakul</h1>
-            <nav className="nav">
+            <h1 classname="App-h1">Patcharalak Tulyakul</h1>
+            <nav className="App-nav">
                 <img src="/icons/Icon1.svg" alt="menu" className="App-logo" onClick={toggleMenu}/>
-                <ul className={"nav-links ${menuOpen ? 'open': ''}"}>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/projects">Projects</Link></li>
-                    <li><Link to="/certificates">Certificates</Link></li>
-                </ul>
+                {menuOpen && 
+                <div className="App-nav-tab">
+                    <ul className={`nav-links ${menuOpen ? "open": ""}`}>
+                        <li><Link to="/about">About me</Link></li>
+                        <li><Link to="/certificates">Certificates</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                    </ul>
+                </div>
+                }
             </nav>
         </header>
     );

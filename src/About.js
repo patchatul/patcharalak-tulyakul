@@ -4,7 +4,7 @@ function About(){
     return(
     <div className="About">
         <div>
-            <img src="/icons/Pat.jpg" alt="Picture of me"/>
+            <img src="/icons/Pat.jpg" alt="Picture of me" className="About-img"/>
             <p>Hello! My name is Patcharalak Tulyakul. I'm a Computer Science student.</p>
         </div> 
         <div>
