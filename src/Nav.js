@@ -9,20 +9,20 @@ function Nav(){
     }
     return(
         <header className="App-header">
-            <h1 classname="App-h1">Patcharalak Tulyakul</h1>
+            <h1 classname="App-h1"><a href="https://github.com/patchatul/">Patcharalak Tulyakul</a></h1>
             <nav className="App-nav">
                 <img src="/icons/Icon1.svg" alt="menu" className="App-logo" onClick={toggleMenu}/>
                 {menuOpen && 
                 <div className="App-nav-tab">
-                    <ul className={`nav-links ${menuOpen ? "open": ""}`}>
-                        <li><Link to="/about">About me</Link></li>
+                    <ul className={'Nav-links ${menuOpen ? "open": ""}'}>
+                        <li><Link to="/">About me</Link></li>
                         <li><Link to="/certificates">Certificates</Link></li>
                         <li><Link to="/projects">Projects</Link></li>
                     </ul>
                 </div>
                 }
             </nav>
-        </header>
+        </header>        
     );
 }
 export default Nav;

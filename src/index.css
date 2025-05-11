@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --primary-text-color: #FFF9D1;
+  --primary-bg: #263650;
+  --secondary-text-color: #714E3A;
+}
+
+@font-face {
+  font-family: FontPat;
+  src: url('../public/Pat3-Regular.ttf');
+}
+* {
+  text-align: center;
+  font-family: FontPat;
+  color: var(--primary-text-color);
+}

@@ -1,12 +1,7 @@
-.App {
-  text-align: center;
-  font-family: FontPat;
-}
-
 .App-logo {
   height: 10vmin;
-
-  /*animation: App-logo-spin infinite 20s linear;*/
+  /*animation: App-logo-spin infinite 20s linear;
+  */
 }
 
 @keyframes App-logo-spin {
@@ -18,26 +13,33 @@
   }
 }
 
-@font-face {
-  font-family: FontPat;
-  src: url('../public/Pat3-Regular.ttf');
-}
-
 .App-header {
-  background-color: #263650;
+  background-color:var(--primary-bg);
   min-height: 5vh;
   display: flex;
   flex-direction: row;
   align-items:center;
-  justify-content: space-around;
-  font-size: calc(10px + 2vmin);
-  color: #FFF9D1;
+  justify-content: space-evenly;
+  font-size: calc(12px + 2vmin);
 }
 .App-nav-tab{
-  float: left;
+  position: absolute;
+  background-color: var(--primary-bg);
+  border-radius: 20px;
+  left:65%;
+  /*border: 1px solid var(--primary-text-color);*/
 }
+
 nav ul li{
   text-align: left;
+  list-style-image: url(../public/icons/Icon2.svg);
+  margin: 10px;
+ /*list-style-type: none;
+  padding: 10px 30px;
+  background-image: url(../public/icons/Icon2.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 25px;*/
 }
 
 .About-img{
@@ -46,7 +48,6 @@ nav ul li{
 
 a{
   text-decoration: none;
-  color:#FFF9D1;
 }
 /*@media screen and (max-width: 600px) {
   
@@ -55,3 +56,6 @@ a{
   color: #61dafb;
   #490013 #ABB2C5
 }*/
+li:hover, a:hover{
+  text-decoration-style: wavy;
+}

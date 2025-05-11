@@ -11,13 +11,10 @@ function App() {
       <Nav/>
       <main className="Main">
         <Routes>
-          <Route path="/about" element={<About/>}></Route>
+          <Route index element={<About/>}></Route>
           <Route path="/certificates" element={<Certificates/>}></Route>
           <Route path="/projects" element={<Projects/>}></Route>
         </Routes>
-        <About/>
-        <Certificates/>
-        <Projects/>
       </main>
     </div>
   );
