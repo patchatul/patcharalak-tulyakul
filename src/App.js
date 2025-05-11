@@ -3,19 +3,19 @@ import Nav from './Nav.js'
 import About from './About.js';
 import Certificates from './Certificates';
 import Projects from './Projects';
-import { Routes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Home.js';
 
 function App() {
   return (
     <div className="App">
       <Nav/>
-      <main className="Main">
         <Routes>
-          <Route index element={<About/>}></Route>
+          <Route index element={<Home/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
           <Route path="/certificates" element={<Certificates/>}></Route>
           <Route path="/projects" element={<Projects/>}></Route>
         </Routes>
-      </main>
     </div>
   );
 }

@@ -12,8 +12,8 @@ code {
     monospace;
 }
 :root{
-  --primary-text-color: #FFF9D1;
-  --primary-bg: #263650;
+  --primary-text-color:#263650 ;
+  --primary-bg: #FFF9D1;
   --secondary-text-color: #714E3A;
 }
 
