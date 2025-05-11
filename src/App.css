@@ -15,6 +15,7 @@
 /*Nav.js*/
 .App-header {
   background-color:var(--primary-text-color);
+  color:var(--primary-bg);
   min-height: 5vh;
   display: flex;
   flex-direction: row;
@@ -32,7 +33,6 @@ h1 a{
   left:65%;
   /*border: 1px solid var(--primary-text-color);*/
 }
-
 nav ul li{
   text-align: left;
   list-style-image: url(../public/icons/Icon2.svg);
@@ -44,15 +44,46 @@ nav ul li{
   background-position: left center;
   background-size: 25px;*/
 }
-
-/*About.js*/
-.About-img{
-  height: 50vmin;
-  border-radius: 20px;
+nav ul li a{
+  color: var(--primary-text-color);
 }
+/*About.js*/
+.About{
+  padding:50px 0;
+}
+.About-img{
+  border-radius: 20px;
+  margin: 20px;
+}
+.App-About{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:center;
+  padding: 50px;
+}
+.App-About p{
+  text-align: left;
+  padding: 20px;
+}
+.App-footer{
+  padding:20px;
+  background-color: var(--primary-text-color);
+}
+.App-footer a{
+  padding:20px;
+  width: 100%;
+  font-size: 36px;
+  color:var(--primary-bg);
+}
+.App-footer a:hover{
+  text-decoration-color: var(--primary-bg);
+  /*background-image: url(../public/icons/Icon3.svg);
+*/
+  }
 
-a{
-  text-decoration: none;
+img{
+  max-height: 50vmin;
 }
 /*@media screen and (max-width: 600px) {
   
@@ -61,6 +92,6 @@ a{
   color: #61dafb;
   #490013 #ABB2C5
 }*/
-li:hover, a:hover{
+a:hover{
   text-decoration: underline wavy var(--primary-text-color) 1px;
 }

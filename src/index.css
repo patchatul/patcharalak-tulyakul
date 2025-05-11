@@ -26,3 +26,15 @@ code {
   font-family: FontPat;
   color: var(--primary-text-color);
 }
+main, .About, .Certificates, .Projects{ 
+  background-color: var(--primary-bg);
+}
+h2{
+  font-size: 40px;
+}
+p{
+  font-size: 36px;
+}
+a{
+  text-decoration: none;
+}

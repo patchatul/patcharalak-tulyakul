@@ -3,7 +3,7 @@ import './App.css';
 function Certificates() {
   return (
     <div className="Certificates">
-      <h1>Certificates</h1>
+      <h2>Certificates</h2>
         <div>
           <p>Meta Front-End Developer</p>
           <a href="https://www.coursera.org/account/accomplishments/professional-cert/34FVJVRS4DKP">
