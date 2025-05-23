@@ -31,18 +31,11 @@ h1 a{
   background-color: var(--primary-bg);
   border-radius: 20px;
   left:65%;
-  /*border: 1px solid var(--primary-text-color);*/
 }
 nav ul li{
   text-align: left;
   list-style-image: url(../public/icons/Icon2.svg);
   margin: 10px;
- /*list-style-type: none;
-  padding: 10px 30px;
-  background-image: url(../public/icons/Icon2.svg);
-  background-repeat: no-repeat;
-  background-position: left center;
-  background-size: 25px;*/
 }
 nav ul li a{
   color: var(--primary-text-color);
@@ -60,7 +53,7 @@ nav ul li a{
   flex-direction: row;
   align-items:center;
   justify-content:center;
-  padding: 50px;
+  padding: 40px;
 }
 .App-About p{
   text-align: left;
@@ -78,9 +71,11 @@ nav ul li a{
 }
 .App-footer a:hover{
   text-decoration-color: var(--primary-bg);
-  /*background-image: url(../public/icons/Icon3.svg);
-*/
-  }
+}
+
+.Certificates-text{
+  margin: 0 10vw;
+}
 
 img{
   max-height: 50vmin;
