@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 50px;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -17,8 +18,8 @@ code {
     monospace;
 }
 :root{
-  --primary-text-color:#263650 ;
-  --primary-bg: #FFF9D1;
+  --primary-text-color: #FFF9D1;
+  --primary-bg: #011f4b;
   --secondary-text-color: #714E3A;
 }
 
@@ -31,9 +32,7 @@ code {
   font-family: FontPat;
   color: var(--primary-text-color);
 }
-main, .About, .Certificates, .Projects{ 
-  background-color: var(--primary-bg);
-}
+
 h2{
   font-size: 40px;
 }

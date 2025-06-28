@@ -1,7 +1,7 @@
 .App-logo {
   height: 10vmin;
-  /*animation: App-logo-spin infinite 20s linear;
-  */
+  animation: App-logo-spin infinite 20s linear;
+  
 }
 
 @keyframes App-logo-spin {
@@ -14,8 +14,6 @@
 }
 /*Nav.js*/
 .App-header {
-  background-color:var(--primary-text-color);
-  color:var(--primary-bg);
   min-height: 5vh;
   display: flex;
   flex-direction: row;
@@ -23,14 +21,14 @@
   justify-content: space-evenly;
   font-size: calc(12px + 2vmin);
 }
-h1 a{
-  color: var(--primary-bg);
+h1 a:hover{
+  text-decoration: none;
 }
 .App-nav-tab{
   position: absolute;
-  background-color: var(--primary-bg);
   border-radius: 20px;
   left:64.5%;
+  background-color: var(--primary-text-color);
 }
 nav ul li{
   text-align: left;
@@ -38,7 +36,7 @@ nav ul li{
   margin: 10px;
 }
 nav ul li a{
-  color: var(--primary-text-color);
+  color: var(--primary-bg);
 }
 /*About.js*/
 .About{
@@ -61,24 +59,17 @@ nav ul li a{
 }
 .App-footer{
   padding:20px;
-  background-color: var(--primary-text-color);
 }
 .App-footer a{
   padding:20px;
   width: 100%;
   font-size: 36px;
-  color:var(--primary-bg);
-}
-.App-footer a:hover{
-  text-decoration-color: var(--primary-bg);
 }
 
 .Certificates-text, .Projects-text{
   margin: 0 20vw;
 }
 h2{
-  color: var(--primary-bg);
-  background-color: var(--primary-text-color);
   padding: 20px;
 }
 img{
