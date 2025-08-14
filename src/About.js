@@ -1,11 +1,12 @@
 import './App.css';
+import pat from '../src/icons/Pat.jpg';
 
 function About(){
     return(
     <div className="About">
         <div className="App-About">
             <div>
-            <img src="/icons/Pat.jpg" alt="Picture of me" className="About-img"/>
+            <img src={pat} alt="Picture of me" className="About-img"/>
             </div>
             <div>
             <p>Hi there!<br/>

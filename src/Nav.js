@@ -11,7 +11,7 @@ function Nav(){
         <header className="App-header">
             <h1 classname="App-h1"><Link to="/">Patcharalak Tulyakul</Link></h1>
             <nav className="App-nav">
-                <img src="/icons/Icon1.svg" alt="menu" className="App-logo" onClick={toggleMenu}/>
+                <img src={`${process.env.PUBLIC_URL}/icons/Icon1.svg`} alt="menu" className="App-logo" onClick={toggleMenu}/>
                 {menuOpen && 
                 <div className="App-nav-tab">
                     <ul className={'Nav-links ${menuOpen ? "open": ""}'}>

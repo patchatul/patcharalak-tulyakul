@@ -2,7 +2,7 @@
   "name": "patcharalak-tulyakul",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patchatul.github.io/patcharalak-tulyakul/",
+  "homepage": "https://patchatul.github.io/",
 
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
