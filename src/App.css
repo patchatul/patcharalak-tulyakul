@@ -1,7 +1,6 @@
 .App-logo {
   height: 10vmin;
   animation: App-logo-spin infinite 20s linear;
-  
 }
 
 @keyframes App-logo-spin {
@@ -12,6 +11,7 @@
     transform: rotate(360deg);
   }
 }
+
 /*Nav.js*/
 .App-header {
   min-height: 5vh;
@@ -40,34 +40,32 @@ nav ul li a{
 }
 /*About.js*/
 .About{
-  padding:50px 0;
+  padding:40px;
 }
 .About-img{
   border-radius: 20px;
-  margin: 20px;
 }
 .App-About{
   display:flex;
   flex-direction: row;
   align-items:center;
   justify-content:center;
-  padding: 40px;
+  padding:40px;
 }
 .App-About p{
   text-align: left;
   padding: 20px;
 }
 .App-footer{
-  padding:20px;
+  padding: 20px;
 }
 .App-footer a{
-  padding:20px;
+  padding: 20px;
   width: 100%;
   font-size: 36px;
 }
-
 .Certificates-text, .Projects-text{
-  margin: 0 20vw;
+  margin: 15px 20vw;
 }
 h2{
   padding: 20px;
@@ -78,11 +76,3 @@ img{
 a:hover{
   text-decoration: underline wavy var(--primary-text-color) 1px;
 }
-/*@media screen and (max-width: 600px) {
-  
-}*/
-/*.App-link {
-  color: #61dafb;
-  #490013 #ABB2C5
-}*/
-

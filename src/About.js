@@ -8,9 +8,12 @@ function About(){
             <img src="/icons/Pat.jpg" alt="Picture of me" className="About-img"/>
             </div>
             <div>
-            <p>Hello there!<br/>
-            My name is Patcharalak Tulyakul.<br/>
-            I'm a Computer Science student.<br/>
+            <p>Hi there!<br/>
+            Name:<br/>Patcharalak Tulyakul / Pat<br/>
+            Major:<br/>Computer Science <br/>
+            Education:<br/>4.00, Dean's List @ HCC (May 2024 - Dec 2025)<br/>
+            Currently learning:<br/>
+            Back-end, Machine Learning<br/>
             </p>
             </div>
         </div>
