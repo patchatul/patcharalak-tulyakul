@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/patcharalak-tulyakul/static/css/main.10be369a.css",
-    "main.js": "/patcharalak-tulyakul/static/js/main.bacf0699.js",
+    "main.js": "/patcharalak-tulyakul/static/js/main.70e5d6fe.js",
     "static/js/453.32334575.chunk.js": "/patcharalak-tulyakul/static/js/453.32334575.chunk.js",
     "static/media/Pat.jpg": "/patcharalak-tulyakul/static/media/Pat.b05d1839c9fcff7a45b4.jpg",
+    "static/media/LittleLemon.png": "/patcharalak-tulyakul/static/media/LittleLemon.d15f496b7d359ed1d394.png",
     "static/media/JavaScriptfreeCodeCamp.png": "/patcharalak-tulyakul/static/media/JavaScriptfreeCodeCamp.c7611e7c4a954603f15d.png",
     "static/media/ResponsiveWebfreeCodeCamp.png": "/patcharalak-tulyakul/static/media/ResponsiveWebfreeCodeCamp.c2bb5bb73a8f690894d9.png",
     "static/media/MetaFrontEndDeveloperCoursera.jpg": "/patcharalak-tulyakul/static/media/MetaFrontEndDeveloperCoursera.b9bf2e13ed5748e9144d.jpg",
+    "static/media/stockprediction.png": "/patcharalak-tulyakul/static/media/stockprediction.b0eae64edad30e434493.png",
     "static/media/Pat3-Regular.ttf": "/patcharalak-tulyakul/static/media/Pat3-Regular.f3de82765f0fb06600e3.ttf",
     "static/media/Icon2.svg": "/patcharalak-tulyakul/static/media/Icon2.adecb1563224e4562f9e.svg",
     "index.html": "/patcharalak-tulyakul/index.html",
     "main.10be369a.css.map": "/patcharalak-tulyakul/static/css/main.10be369a.css.map",
-    "main.bacf0699.js.map": "/patcharalak-tulyakul/static/js/main.bacf0699.js.map",
+    "main.70e5d6fe.js.map": "/patcharalak-tulyakul/static/js/main.70e5d6fe.js.map",
     "453.32334575.chunk.js.map": "/patcharalak-tulyakul/static/js/453.32334575.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10be369a.css",
-    "static/js/main.bacf0699.js"
+    "static/js/main.70e5d6fe.js"
   ]
 }
