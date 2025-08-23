@@ -6,16 +6,16 @@ function About(){
     <div className="About">
         <div className="App-About">
             <div>
-            <img src={Pat} alt="Picture of me" className="About-img"/>
+                <img src={Pat} alt="Picture of me" className="About-img"/>
             </div>
-            <div>
-            <p>Hi there!<br/>
-            Name:<br/>Patcharalak Tulyakul / Pat<br/>
-            Major:<br/>Computer Science <br/>
-            Education:<br/>4.00, Dean's List @ HCC (May 2024 - Dec 2025)<br/>
-            Currently learning:<br/>
-            Back-end, Machine Learning<br/>
-            </p>
+            <div className="About-des">
+                <p>Hi there!<br/>
+                Name:<br/>Patcharalak Tulyakul / Pat<br/>
+                Major:<br/>Computer Science <br/>
+                Education:<br/>4.00, Dean's List @ HCC (May 2024 - Dec 2025)<br/>
+                Currently learning:<br/>
+                Back-end, Machine Learning<br/>
+                </p>
             </div>
         </div>
         <div className="App-footer">

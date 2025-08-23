@@ -27,7 +27,7 @@ h1 a:hover{
 .App-nav-tab{
   position: absolute;
   border-radius: 20px;
-  left:64.5%;
+  left:64%;
   background-color: var(--primary-text-color);
 }
 nav ul li{
@@ -50,18 +50,19 @@ nav ul li a{
   flex-direction: row;
   align-items:center;
   justify-content:center;
-  padding:40px;
+  padding: 40px;
 }
 .App-About p{
   text-align: left;
   padding: 20px;
 }
 .App-footer{
-  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  gap: 20px;
 }
 .App-footer a{
-  padding: 20px;
-  width: 100%;
   font-size: 36px;
 }
 .Certificates-text, .Projects-text{
@@ -75,4 +76,11 @@ img{
 }
 a:hover{
   text-decoration: underline wavy var(--primary-text-color) 1px;
+}
+@media only screen and (max-width: 700px) {
+  .App-About{
+    flex-direction: column;
+  }
+  .App-nav-tab{
+  }
 }
