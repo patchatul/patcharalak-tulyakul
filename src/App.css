@@ -30,6 +30,9 @@ h1 a:hover{
   left:64%;
   background-color: var(--primary-text-color);
 }
+nav ul{
+  margin: -5px;
+}
 nav ul li{
   text-align: left;
   list-style-image: url(../public/icons/Icon2.svg);
@@ -50,7 +53,7 @@ nav ul li a{
   flex-direction: row;
   align-items:center;
   justify-content:center;
-  padding: 40px;
+  margin: 40px;
 }
 .App-About p{
   text-align: left;
@@ -82,5 +85,6 @@ a:hover{
     flex-direction: column;
   }
   .App-nav-tab{
+    left:60%
   }
 }
