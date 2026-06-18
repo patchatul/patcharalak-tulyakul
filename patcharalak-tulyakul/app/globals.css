@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  --primary-text-color: #FFF9D1;
+  --primary-bg: #011338; /*#490013*/
+  --secondary-text-color: #f2b592;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-special-gothic: "Special Gothic Expanded One", sans-serif;
+  --font-pat: FontPat, sans-serif;
+  --font-big-shoulders: "Big Shoulders", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
+@font-face {
+  font-family: FontPat;
+  src: url('/Pat3-Regular.ttf');
+}
+
+/*scrollbar*/
+/* 1. Modern Standard (Firefox, Safari 18.4+, Chrome 121+) */
+html {
+  scrollbar-color: #fff9d1 #011338; /* Thumb color (yellow) and Track background */
+  scrollbar-width: thin;          /* Size options: auto | thin | none */
+}
+
+/* 2. WebKit Browsers (Chrome, Edge, older Safari versions) */
+/* Controls the overall size of the scrollbar */
+html::-webkit-scrollbar {
+  width: 12px;               /* Width of vertical scrollbar */
+  height: 12px;              /* Height of horizontal scrollbar */
+}
+
+/* Controls the background track */
+html::-webkit-scrollbar-track {
+  background: #011338;       /* Track color */
+}
+
+/* Controls the draggable scrollbar handle */
+html::-webkit-scrollbar-thumb {
+  background-color: #fff9d1;  /* Yellow thumb */
+  border-radius: 6px;        /* Round corners */
+  border: 3px solid #011338; /* Creates padding around the thumb */
+}
+
+body {
+  margin: 0;
+  padding: 3rem;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--primary-bg);
+  color: var(--primary-text-color);
+  font-family: 'Special Gothic Expanded One', 'Inter',FontPat, sans-serif;
+}
+.section-heading {
+  position: relative;
+  margin-top: 1.5rem; 
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.section-heading::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.25rem;
+  vertical-align: bottom;
+  background-image: url("/Icon3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+a:hover{
+  text-decoration: underline 1px wavy var(--primary-text-color);
+}
