@@ -52,7 +52,7 @@ const CertificateCards: React.FC<CertificateList> = ({
         <Image
           src={img}
           alt={alt}
-          className="w-[90%] m-2 object-cover h-auto rounded-xl hover:scale-[1.02]"
+          className="h-auto w-[80%] m-2 object-cover rounded-xl hover:scale-[1.02]"
         />
       </div>
       <div className="flex flex-wrap justify-center gap-2">

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Special_Gothic_Expanded_One, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "./Nav";
+import Effects from "./Effects";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,6 +13,7 @@ const specialGothic = Special_Gothic_Expanded_One({
   subsets: ["latin"],
   weight: ["400"],
 });
+
 
 export const metadata: Metadata = {
   title: "Patcharalak Tulyakul",
@@ -49,9 +51,7 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-
-  themeColor: "#011338",
-  //metadataBase: new URL(""), //website link
+  metadataBase: new URL("http://localhost:3000") //update deployed link later
 };
 
 export default function RootLayout({
@@ -59,12 +59,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html
       lang="en"
       className={`${specialGothic.className} ${inter.className} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Effects />
         <header>
           <Nav />
         </header>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --primary-text-color: #FFF9D1;
+  --primary-text-color: #fff9d1;
   --primary-bg: #011338; /*#490013*/
   --secondary-text-color: #f2b592;
 }
@@ -16,32 +16,33 @@
 }
 @font-face {
   font-family: FontPat;
-  src: url('/Pat3-Regular.ttf');
+  src: url("/Pat3-Regular.ttf");
 }
 
 /*scrollbar*/
 /* 1. Modern Standard (Firefox, Safari 18.4+, Chrome 121+) */
 html {
+  scroll-behavior: smooth;
   scrollbar-color: #fff9d1 #011338; /* Thumb color (yellow) and Track background */
-  scrollbar-width: thin;          /* Size options: auto | thin | none */
+  scrollbar-width: thin; /* Size options: auto | thin | none */
 }
 
 /* 2. WebKit Browsers (Chrome, Edge, older Safari versions) */
 /* Controls the overall size of the scrollbar */
 html::-webkit-scrollbar {
-  width: 12px;               /* Width of vertical scrollbar */
-  height: 12px;              /* Height of horizontal scrollbar */
+  width: 12px; /* Width of vertical scrollbar */
+  height: 12px; /* Height of horizontal scrollbar */
 }
 
 /* Controls the background track */
 html::-webkit-scrollbar-track {
-  background: #011338;       /* Track color */
+  background: #011338; /* Track color */
 }
 
 /* Controls the draggable scrollbar handle */
 html::-webkit-scrollbar-thumb {
-  background-color: #fff9d1;  /* Yellow thumb */
-  border-radius: 6px;        /* Round corners */
+  background-color: #fff9d1; /* Yellow thumb */
+  border-radius: 6px; /* Round corners */
   border: 3px solid #011338; /* Creates padding around the thumb */
 }
 
@@ -53,11 +54,11 @@ body {
   overflow-x: hidden;
   background-color: var(--primary-bg);
   color: var(--primary-text-color);
-  font-family: 'Special Gothic Expanded One', 'Inter',FontPat, sans-serif;
+  font-family: "Special Gothic Expanded One", "Inter", FontPat, sans-serif;
 }
 .section-heading {
   position: relative;
-  margin-top: 1.5rem; 
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
 }
@@ -86,8 +87,67 @@ body {
     transform: rotate(360deg);
   }
 }
+/* Trail of flowers that follow the cursor */
+.cursor-flower {
+  position: fixed;
+  width: 28px;
+  height: 28px;
+  pointer-events: none;
+  z-index: 50;
+  transform: translate(-50%, -50%);
+  background-image: url("/Icon3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: trailFade 0.65s ease forwards;
+}
+@keyframes trailFade {
+  0% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.2) rotate(45deg);
+  }
+}
+/* flowers pop out */
+.burst-icon {
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(0, 0) scale(0.4);
+  animation: burst-float 5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
 
+@keyframes burst-float {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(
+      calc(200px * var(--rand-x)),
+      calc(200px * var(--rand-y))
+    ) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(
+      calc(300px * var(--rand-x)),
+      calc(300px * var(--rand-y))
+    ) scale(0.6);
+  }
+}
 
-a:hover{
+a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+a:hover {
+ transform: translateY(-3px);
   text-decoration: underline 1px wavy var(--primary-text-color);
+  transition: all 0.2s ease;
 }

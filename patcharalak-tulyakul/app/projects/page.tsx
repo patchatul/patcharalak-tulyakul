@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
   return (
     <section className="p-5 m-5">
       <h2 className="text-center text-3xl pb-5 m-5 border-b">Projects</h2>
-      <div className="grid  md:grid-cols-2 lg:grid-cols-3  gap-8">
+      <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((proj) => (
           <ProjectCards key={proj.title} {...proj} />
         ))}
