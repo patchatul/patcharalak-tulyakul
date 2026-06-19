@@ -151,3 +151,9 @@ a:hover {
   text-decoration: underline 1px wavy var(--primary-text-color);
   transition: all 0.2s ease;
 }
+@media (max-width: 768px) {
+  body{
+  margin: 0;
+  padding: 6px;
+  }
+}

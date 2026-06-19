@@ -51,7 +51,7 @@ const projects: ProjectList[] = [
   },
   {
     title: "3D Escape Room",
-    link: "https://3d-escape-room.vercel.app/",
+    link: "https://github.com/patchatul/escaperoom_hackusf",
     img: EscapeRoom,
     alt: "3D Escape Room Website",
     desc: "Developed an AI-powered interactive 3D escape room game in HACKUSF using Three.js with Python debugging challenges.",

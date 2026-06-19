@@ -97,11 +97,11 @@ function About() {
   return (
     <div className="my-10">
       {/* Pic & Main Info */}
-      <div className="flex flex-row  gap-4 justify-center">
+      <div className="flex flex-row gap-4 justify-center items-center md:items-start">
         <Image
           src={Pat}
           alt="This is Pat. Feel free to check out my Linkedin for my picture."
-          className="w-50 h-auto md:w-80 rounded-2xl object-cover"
+          className="w-40 h-40 md:w-80 md:h-80 rounded-2xl object-cover"
         />
         <span className="flex flex-col gap-4 font-inter font-light">
           <p>{info.major}</p>

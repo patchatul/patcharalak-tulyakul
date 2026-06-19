@@ -6,7 +6,7 @@ import { spawnIconBurst } from "./Effects";
 
 function Nav() {
   return (
-    <div className="flex items-center justify-evenly">
+    <div className="flex items-center justify-evenly overflow-clip">
       <h1 className="text-4xl flex font-medium">
         <Link href="/">Patcharalak Tulyakul</Link>
       </h1>
