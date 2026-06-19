@@ -34,3 +34,45 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+```
+└── 📁patcharalak-tulyakul
+    └── 📁app
+        └── 📁about
+            ├── page.tsx
+        └── 📁certificates
+            ├── page.tsx
+        └── 📁projects
+            ├── page.tsx
+        ├── Effects.tsx
+        ├── globals.css
+        ├── layout.tsx
+        ├── Nav.tsx
+        ├── page.tsx
+    └── 📁public
+        ├── EscapeRoom.png
+        ├── Guineapigphotobooth.png
+        ├── Icon1.svg
+        ├── Icon2.svg
+        ├── Icon3.svg
+        ├── JSfreeCodeCamp.png
+        ├── LittleLemon.png
+        ├── LittleLemonUXUI.png
+        ├── MetaFrontEndDeveloperCoursera.jpg
+        ├── Movierecommendation.png
+        ├── Pat.jpg
+        ├── Pat3-Regular.ttf
+        ├── Phototoflower.png
+        ├── ResponsiveWebfreeCodeCamp.png
+        ├── Stockprediction.png
+        ├── StockTracking.png
+    ├── .gitignore
+    ├── eslint.config.mjs
+    ├── next-env.d.ts
+    ├── next.config.ts
+    ├── package-lock.json
+    ├── package.json
+    ├── postcss.config.mjs
+    ├── README.md
+    └── tsconfig.json
+```

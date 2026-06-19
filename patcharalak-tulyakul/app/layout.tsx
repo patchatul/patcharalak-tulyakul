@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Patcharalak Tulyakul",
     description: "Personal website of Patcharalak Tulyakul",
-    url: "", //website link
+    url: "https://patcharalak-tulyakul.vercel.app/", //website link
     siteName: "Patcharalak Tulyakul",
     images: [
       {
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  metadataBase: new URL("http://localhost:3000") //update deployed link later
+  metadataBase: new URL("https://patcharalak-tulyakul.vercel.app/") //update deployed link later
 };
 
 export default function RootLayout({
