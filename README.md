@@ -1,2 +1,2 @@
-## Patcharalak Tulyakul's Porflio Website
+## Patcharalak Tulyakul's Portfolio Website
 https://patcharalak-tulyakul.vercel.app/
