@@ -2,6 +2,7 @@ import Image from "next/image";
 import MetaFrontEndCert from "../../public/MetaFrontEndDeveloperCoursera.jpg";
 import ResponsiveWebCert from "../../public/ResponsiveWebfreeCodeCamp.png";
 import JavaScriptCert from "../../public/JSfreeCodeCamp.png"; 
+import Tesol from "../../public/TESOLCertificate.png";
 
 interface CertificateList {
   title: string;
@@ -32,6 +33,13 @@ const certificates: CertificateList[] = [
     alt: "Responsive Web Design freeCodeCamp Certificate",
     desc: ["Responsive Web Design", "HTML", "CSS"],
   },
+  {
+    title: "TESOL Certificate",
+    link: "https://www.tesol.com/certificate",
+    img: Tesol,
+    alt: "TESOL Certificate",
+    desc: ["Teaching English","TESOL", "TEFL", "ESL","Online Instruction", "Classroom Management", "Lesson Planning", "Language Acquisition"],
+  },
 ];
 
 const CertificateCards: React.FC<CertificateList> = ({
@@ -46,15 +54,16 @@ const CertificateCards: React.FC<CertificateList> = ({
       <p className="text-xl text-center">
         <a href={link} target="_blank" rel="noopener noreferrer">
           {title}
-        </a>
-      </p>
-      <div className="flex justify-center w-full">
+          <span className="flex justify-center w-full">
         <Image
           src={img}
           alt={alt}
           className="h-auto w-[80%] m-2 object-cover rounded-xl hover:scale-[1.02]"
         />
-      </div>
+      </span>
+        </a>
+      </p>
+      
       <div className="flex flex-wrap justify-center gap-2">
         {desc.map((d) => (
           <span

@@ -103,16 +103,15 @@ const ProjectCards: React.FC<ProjectList> = ({
     <div>
       <p className="text-xl text-center">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          {title}
-        </a>
-      </p>
-      <div className="flex justify-center w-full">
-        <Image
+          {title} 
+          <span className="flex justify-center w-full">
+          <Image
           src={img}
           alt={alt}
           className="w-full m-2 aspect-video object-cover h-auto rounded-xl hover:scale-[1.02]"
-        />
-      </div>
+        /></span>
+        </a>
+      </p>
       <p className="font-inter">{desc}</p>
       <div className="flex flex-wrap justify-center gap-2 mt-2">
         {tech.map((t) => (

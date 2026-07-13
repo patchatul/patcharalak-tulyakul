@@ -1,5 +1,6 @@
 import Pat from "../../public/Pat.jpg";
 import Image from "next/image";
+import icon3 from "../../public/Icon3.svg";
 
 interface Info {
   name: string;
@@ -58,10 +59,20 @@ const activities: Activities[] = [
 ];
 const ActivitiesCards: React.FC<Activities> = ({ club, role, time }) => {
   return (
-    <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 font-light font-inter mt-0 mb-2 m-8">
-      <p>{club}</p>
-      <p>{role}</p>
-      <p className="text-right">{time}</p>
+      <div className="flex gap-3 ">
+      <div className="flex flex-col items-center shrink-0 w-5">
+        <Image src={icon3} alt="" className="w-5 h-5 shrink-0"
+        />
+        <div className="w-px flex-1 mb-2 bg-white/40 " />
+      </div>
+
+      <div className="flex-1 mb-6">
+        <p className="font-light font-inter">{time}</p>
+        <div className="grid grid-cols-2 gap-2 mt-2">
+          <p className="font-medium">{role}</p>
+          <p className="text-right">{club}</p>
+        </div>
+      </div>
     </div>
   );
 };
@@ -73,29 +84,45 @@ interface Work {
 
 const work: Work[] = [
   {
-    work: "Freelance, Tampa FL",
-    role: "Frontend Developer, Scrum Master",
-    time: "Aug 2025 - Jan 2026",
+    work: "Herzing University, Remote USA",
+    role: "Instructional Design Intern",
+    time: "June 2026 - Present",
   },
   {
     work: "Boromarajonani College of Nursing, Trang TH",
     role: "English Tutor",
-    time: "Apr 2022 - Apr 2024",
+    time: "Apr 2022 - Present",
   },
+  {
+    work: "Freelance, Tampa FL",
+    role: "Frontend Developer & Scrum Master",
+    time: "Aug 2025 - Jan 2026",
+  },
+  
 ];
 const WorkCards: React.FC<Work> = ({ work, role, time }) => {
   return (
-    <div className="grid grid-cols-[2fr_1fr_1fr] gap-4 font-light font-inter mt-0 mb-2 m-8">
-      <p>{work}</p>
-      <p>{role}</p>
-      <p className="text-right">{time}</p>
+     <div className="flex gap-3 ">
+      <div className="flex flex-col items-center shrink-0 w-5">
+        <Image src={icon3} alt="" className="w-5 h-5 shrink-0"
+        />
+        <div className="w-px flex-1 mb-2 bg-white/40 " />
+      </div>
+
+      <div className="flex-1 mb-6">
+        <p className="font-light font-inter">{time}</p>
+        <div className="grid grid-cols-2 gap-2 mt-2">
+          <p className="font-medium">{role}</p>
+          <p className="text-right">{work}</p>
+        </div>
+      </div>
     </div>
   );
 };
 
 function About() {
   return (
-    <div className="my-10">
+    <div className="sm:m-10 m-2">
       {/* Pic & Main Info */}
       <div className="flex flex-row gap-4 justify-center items-center md:items-start">
         <Image
@@ -109,15 +136,22 @@ function About() {
           <p>{info.pastedu}</p>
         </span>
       </div>
+    <section className="max-w-6xl mx-auto sm:px-10 ">
+      {/* Work Experience */}
 
+        <h2 className="section-heading border-b">Work Experience</h2>
+        {work.map((work) => (
+          <WorkCards
+            key={work.work}
+            work={work.work}
+            role={work.role}
+            time={work.time}
+          />
+        ))}    
+      
       {/* Activities */}
-      <div className=" ">
-        <h2 className="section-heading">Activities</h2>
-        <div className="text-xs grid grid-cols-[2fr_1fr_1fr] gap-4 uppercase border-b m-8 mb-2 mt-0">
-          <span className="text-left">club</span>
-          <span>role</span>
-          <span className="text-right">Time</span>
-        </div>
+        <h2 className="section-heading border-b">Activities</h2>
+      
         {activities.map((activity) => (
           <ActivitiesCards
             key={activity.club}
@@ -126,27 +160,8 @@ function About() {
             time={activity.time}
           />
         ))}
+      </section>
       </div>
-
-      {/* Work Experience */}
-
-      <div className=" ">
-        <h2 className="section-heading">Work Experience</h2>
-        <div className=" text-xs grid grid-cols-[2fr_1fr_1fr] gap-4 uppercase border-b m-8 mb-2 mt-0">
-          <span className="text-left">company, location</span>
-          <span>role</span>
-          <span className="text-right">time</span>
-        </div>
-        {work.map((work) => (
-          <WorkCards
-            key={work.work}
-            work={work.work}
-            role={work.role}
-            time={work.time}
-          />
-        ))}
-      </div>     
-    </div>
   );
 }
 

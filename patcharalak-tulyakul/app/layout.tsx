@@ -77,7 +77,7 @@ export default function RootLayout({
             <div className="flex flex-row items-center gap-5 sm:gap-15 text-2xl">
               <a href="https://github.com/patchatul">Github</a>
               <a href="https://www.linkedin.com/in/patcharalak-tulyakul/">
-                Linkedin
+                LinkedIn
               </a>
               <a href="mailto:patchatulyakul@gmail.com">Gmail</a>
             </div>

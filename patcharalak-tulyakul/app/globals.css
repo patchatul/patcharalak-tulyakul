@@ -3,7 +3,7 @@
 :root {
   --primary-text-color: #fff9d1;
   --primary-bg: #011338; /*#490013*/
-  --secondary-text-color: #f2b592;
+  --secondary-text-color: #714E3A;
 }
 
 @theme inline {
@@ -62,7 +62,7 @@ body {
   margin-bottom: 1.5rem;
   font-size: 1.25rem;
 }
-
+/*
 .section-heading::before {
   content: "";
   display: inline-block;
@@ -73,7 +73,7 @@ body {
   background-image: url("/Icon3.svg");
   background-size: contain;
   background-repeat: no-repeat;
-}
+}*/
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   cursor: pointer;
