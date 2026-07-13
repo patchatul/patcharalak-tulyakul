@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "../../components/Reveal";
 import MetaFrontEndCert from "../../public/MetaFrontEndDeveloperCoursera.jpg";
 import ResponsiveWebCert from "../../public/ResponsiveWebfreeCodeCamp.png";
 import JavaScriptCert from "../../public/JSfreeCodeCamp.png"; 
@@ -86,7 +87,9 @@ const Certificates: React.FC = () => {
       </h2>
       <div className="grid  md:grid-cols-2 lg:grid-cols-3  gap-8">
        {certificates.map((cert) => (
-          <CertificateCards key={cert.title} {...cert} />
+          <Reveal key={cert.title}>
+            <CertificateCards {...cert} />
+          </Reveal>
         ))}
       </div>
     </section>

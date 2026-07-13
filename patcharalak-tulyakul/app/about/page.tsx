@@ -1,5 +1,6 @@
 import Pat from "../../public/Pat.jpg";
 import Image from "next/image";
+import Reveal from "../../components/Reveal";
 import icon3 from "../../public/Icon3.svg";
 
 interface Info {
@@ -59,17 +60,16 @@ const activities: Activities[] = [
 ];
 const ActivitiesCards: React.FC<Activities> = ({ club, role, time }) => {
   return (
-      <div className="flex gap-3 ">
-      <div className="flex flex-col items-center shrink-0 w-5">
-        <Image src={icon3} alt="" className="w-5 h-5 shrink-0"
-        />
-        <div className="w-px flex-1 mb-2 bg-white/40 " />
+    <div className="flex gap-3 ">
+      <div className="flex flex-col items-center shrink-0 w-6">
+        <Image src={icon3} alt="" className="w-6 h-6 shrink-0 App-logo" />
+        <div className="w-px flex-1 mb-3 bg-white/40 " />
       </div>
 
       <div className="flex-1 mb-6">
         <p className="font-light font-inter">{time}</p>
         <div className="grid grid-cols-2 gap-2 mt-2">
-          <p className="font-medium">{role}</p>
+          <p className="">{role}</p>
           <p className="text-right">{club}</p>
         </div>
       </div>
@@ -84,29 +84,27 @@ interface Work {
 
 const work: Work[] = [
   {
-    work: "Herzing University, Remote USA",
+    work: "Herzing University, Remote, USA",
     role: "Instructional Design Intern",
     time: "June 2026 - Present",
   },
   {
-    work: "Boromarajonani College of Nursing, Trang TH",
+    work: "Boromarajonani College of Nursing, Trang, TH",
     role: "English Tutor",
     time: "Apr 2022 - Present",
   },
-  {
-    work: "Freelance, Tampa FL",
+  { 
+    work: "Freelance, Tampa FL, USA",
     role: "Frontend Developer & Scrum Master",
     time: "Aug 2025 - Jan 2026",
   },
-  
 ];
 const WorkCards: React.FC<Work> = ({ work, role, time }) => {
   return (
-     <div className="flex gap-3 ">
-      <div className="flex flex-col items-center shrink-0 w-5">
-        <Image src={icon3} alt="" className="w-5 h-5 shrink-0"
-        />
-        <div className="w-px flex-1 mb-2 bg-white/40 " />
+    <div className="flex gap-3">
+      <div className="flex flex-col items-center shrink-0 w-6">
+        <Image src={icon3} alt="" className="w-6 h-6 shrink-0 App-logo" />
+        <div className="w-px flex-1 mb-3 bg-white/40 " />
       </div>
 
       <div className="flex-1 mb-6">
@@ -122,9 +120,9 @@ const WorkCards: React.FC<Work> = ({ work, role, time }) => {
 
 function About() {
   return (
-    <div className="sm:m-10 m-2">
+    <div className="sm:m-10 m-2 fade-up">
       {/* Pic & Main Info */}
-      <div className="flex flex-row gap-4 justify-center items-center md:items-start">
+      <div className="flex flex-row gap-4 justify-center items-center md:items-start fade-up-delay">
         <Image
           src={Pat}
           alt="This is Pat. Feel free to check out my Linkedin for my picture."
@@ -136,32 +134,35 @@ function About() {
           <p>{info.pastedu}</p>
         </span>
       </div>
-    <section className="max-w-6xl mx-auto sm:px-10 ">
-      {/* Work Experience */}
 
-        <h2 className="section-heading border-b">Work Experience</h2>
-        {work.map((work) => (
-          <WorkCards
-            key={work.work}
-            work={work.work}
-            role={work.role}
-            time={work.time}
-          />
-        ))}    
-      
-      {/* Activities */}
-        <h2 className="section-heading border-b">Activities</h2>
-      
-        {activities.map((activity) => (
-          <ActivitiesCards
-            key={activity.club}
-            club={activity.club}
-            role={activity.role}
-            time={activity.time}
-          />
-        ))}
+      <section className="max-w-6xl mx-auto sm:px-10">
+        <div className="fade-up delay-less">
+          <h2 className="section-heading border-b">Work Experience</h2>
+          {work.map((work) => (
+            <Reveal key={work.work}>
+              <WorkCards
+                work={work.work}
+                role={work.role}
+                time={work.time}
+              />
+            </Reveal>
+          ))}
+        </div>
+
+        <div className="fade-up fade-up-delay">
+          <h2 className="section-heading border-b">Activities</h2>
+          {activities.map((activity) => (
+            <Reveal key={activity.club}>
+              <ActivitiesCards
+                club={activity.club}
+                role={activity.role}
+                time={activity.time}
+              />
+            </Reveal>
+          ))}
+        </div>
       </section>
-      </div>
+    </div>
   );
 }
 

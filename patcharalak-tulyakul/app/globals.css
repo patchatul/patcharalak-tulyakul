@@ -3,7 +3,7 @@
 :root {
   --primary-text-color: #fff9d1;
   --primary-bg: #011338; /*#490013*/
-  --secondary-text-color: #714E3A;
+  --secondary-text-color: #714e3a;
 }
 
 @theme inline {
@@ -56,6 +56,38 @@ body {
   color: var(--primary-text-color);
   font-family: "Special Gothic Expanded One", "Inter", FontPat, sans-serif;
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.fade-up,
+.fade-up-delay,
+.delay-less {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+.fade-up {
+  animation-duration: 2s;
+  animation-delay: 0.2s;
+}
+.delay-less {
+  animation-duration: 1s;
+  animation-delay: 0.1s;
+}
+.fade-up-delay {
+  animation-duration: 1.5s;
+  animation-delay: 0.4s;
+}
+
 .section-heading {
   position: relative;
   margin-top: 1.5rem;
@@ -128,16 +160,18 @@ body {
   60% {
     opacity: 1;
     transform: translate(
-      calc(200px * var(--rand-x)),
-      calc(200px * var(--rand-y))
-    ) scale(1.2);
+        calc(200px * var(--rand-x)),
+        calc(200px * var(--rand-y))
+      )
+      scale(1.2);
   }
   100% {
     opacity: 0;
     transform: translate(
-      calc(300px * var(--rand-x)),
-      calc(300px * var(--rand-y))
-    ) scale(0.6);
+        calc(300px * var(--rand-x)),
+        calc(300px * var(--rand-y))
+      )
+      scale(0.6);
   }
 }
 
@@ -147,13 +181,26 @@ a {
 }
 
 a:hover {
- transform: translateY(-3px);
+  transform: translateY(-3px);
   text-decoration: underline 1px wavy var(--primary-text-color);
   transition: all 0.2s ease;
 }
 @media (max-width: 768px) {
-  body{
-  margin: 0;
-  padding: 6px;
+  body {
+    margin: 0;
+    padding: 6px;
   }
+}
+
+.reveal-card {
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.reveal-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "../../components/Reveal";
 import LittleLemon from "../../public/LittleLemon.png";
 import LittleLemonUXUI from "../../public/LittleLemonUXUI.png";
 import StockPrediction from "../../public/Stockprediction.png";
@@ -112,7 +113,7 @@ const ProjectCards: React.FC<ProjectList> = ({
         /></span>
         </a>
       </p>
-      <p className="font-inter">{desc}</p>
+      <p className="font-inter font-light">{desc}</p>
       <div className="flex flex-wrap justify-center gap-2 mt-2">
         {tech.map((t) => (
           <span key={t} className="bg-[#714E3A] text-xs font-inter p-1 rounded">
@@ -127,9 +128,11 @@ const Projects: React.FC = () => {
   return (
     <section className="p-5 m-5">
       <h2 className="text-center text-3xl pb-5 m-5 border-b">Projects</h2>
-      <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
         {projects.map((proj) => (
-          <ProjectCards key={proj.title} {...proj} />
+          <Reveal key={proj.title}>
+            <ProjectCards {...proj} />
+          </Reveal>
         ))}
       </div>
     </section>
